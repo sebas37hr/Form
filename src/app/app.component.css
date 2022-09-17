@@ -1,0 +1,59 @@
+.nav_color{
+
+    font-family: 'Open Sans', sans-serif;
+    color: #1a1a1a;
+    background-color:#143C66; 
+
+  }
+
+  .button {
+    color: #ffffff;
+    background-color: #010D26;
+    padding: 15px 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+    outline: 0;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    transition: all .2s; }
+    .button:hover, .button:active, .button:focus {
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+  
+  .button--transparent {
+    background: transparent;
+    border: 0;
+    outline: 0; }
+  
+  .button--close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    border-radius: 50%;
+    transition: all .25s;
+    z-index: 10; }
+    .button--close svg {
+      width: 20px;
+      height: 20px; }
+      .button--close svg * {
+        fill: currentColor; }
+    .button--close:hover, .button--close:active, .button--close:focus {
+      color: #2161A6;
+      background-color: #ffffff;
+      box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1); }
+  
+  .button--info {
+    position: absolute;
+    top: 0;
+    right: 0; }

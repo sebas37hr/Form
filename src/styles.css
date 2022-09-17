@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.color_fondo{
+    font-family: 'Open Sans', sans-serif;
+    color: #1a1a1a;
+    background-color: #010D26; }

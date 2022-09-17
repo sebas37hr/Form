@@ -1,0 +1,22 @@
+<section class="py-5">
+  <div class="container px-5">
+    <div class="container">
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Telefono</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr tr *ngFor="let dato of data">
+            <td>{{ dato.nombre }}</td>
+            <td>{{ dato.direccion }}</td>
+            <td>{{ dato.telefono }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

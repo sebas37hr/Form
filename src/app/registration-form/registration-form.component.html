@@ -1,0 +1,64 @@
+<section class="color_fondo">
+  
+  <div class="modal ">
+    <div class="modal__container ">
+      <div class="modal__featured">
+        <div class="modal__circle"></div>
+        <img
+          src="https://images.pexels.com/photos/68594/pexels-photo-68594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="modal__circle"
+        />
+      </div>
+      <div class="modal__content">
+        <h2>Registro de datos</h2>
+        <br />
+
+        <form [formGroup]="personForm">
+          <ul class="form-list">
+            <!-- Name input-->
+            <li class="form-list__row">
+              <div>
+                <label for="name">Nombre Completo</label>
+                <input type="text" formControlName="nombre" />
+              </div>
+            </li>
+            <!-- address input-->
+            <li class="form-list__row">
+              <div>
+                <label for="name">Dirección</label>
+                <input type="text" formControlName="direccion" />
+              </div>
+            </li>
+            <!-- Phone -->
+            <li class="form-list__row">
+              <div>
+                <label for="name">Teléfono</label>
+                <input type="text" formControlName="telefono" />
+              </div>
+            </li>
+            <!-- Guardar datos en arreglo  -->
+            <div class="form-list__row form-group row">
+              <div class="col-md-6">
+                <button class="button" type="submit" (click)="registerUser()">
+                  Guardar
+                </button>
+              </div>
+
+              <!--Mostrar el arreglo en una tabla-->
+              <div class="col-md-6">
+                <button
+                  class="button"
+                  type="submit"
+                  (click)="generateData()"
+                  routerLink="/users"
+                >
+                  Ver Datos
+                </button>
+              </div>
+            </div>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
